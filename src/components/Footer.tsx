@@ -1,7 +1,8 @@
 const links = [
   {href: "/", text: "Main"},
-  {href: "/hit-counter", text: "Hit Counter"},
-  {href: "/hit-counter-with-client-side", text: "Hit Counter With Client Side"},
+  {href: "/hit-counter", text: "Hit counter"},
+  {href: "/hit-counter-with-client-side", text: "Hit counter with client side"},
+  {href: "/styled-components-fix-usage", text: "Styled components usage with rsc"},
 ]
 
 const Footer = () => {
