@@ -1,3 +1,9 @@
+const links = [
+  {href: "/", text: "Main"},
+  {href: "/hit-counter", text: "Hit Counter"},
+  {href: "/hit-counter-with-client-side", text: "Hit Counter With Client Side"},
+]
+
 const Footer = () => {
   const timestamp = new Date().toLocaleString();
 
@@ -5,8 +11,11 @@ const Footer = () => {
 	<footer className="footer p-10 bg-neutral text-neutral-content">
 	  <nav>
 		<h6 className="footer-title">Other pages</h6>
-		<a href="/" className="link link-hover">Main</a>
-		<a href="/hit-counter" className="link link-hover">Hit Counter</a>
+		{
+		  links.map(({href, text}) => (
+			<a key={href} href={href} className="link link-hover">{text}</a>
+		  ))
+		}
 	  </nav>
 	  <nav>
 		<h6 className="footer-title">Page rendered at</h6>
