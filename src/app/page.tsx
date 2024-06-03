@@ -2,7 +2,7 @@ import {FC} from "react";
 
 const Page: FC = () => {
   return (
-	<div className="hero min-h-svh bg-base-200">
+	<div className="hero min-h-96 bg-base-200">
 	  <div className="hero-content text-center">
 		<div className="max-w-md">
 		  <h1 className="text-5xl font-bold">Home page</h1>
