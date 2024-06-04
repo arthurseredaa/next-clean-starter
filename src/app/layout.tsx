@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 
 const RootLayout = ({ children }) => {
   return (
-    <html>
+    <html lang="en">
       <body className="flex justify-between flex-col min-h-screen">
         {children}
       	<Footer />

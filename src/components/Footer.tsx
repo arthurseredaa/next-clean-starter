@@ -6,6 +6,10 @@ const links = [
 const clientSideFeatures = [
   {href: "/hit-counter-with-client-side", text: "Hit counter (with client side feature)"},
   {href: "/styled-components-fix-usage", text: "Styled components usage"},
+  {href: "/hydration-mismatching-ls-initial-value", text: "Hydration mismatching error"},
+]
+
+const serverOnlyFeatures = [
   {href: "/code-reveal-bright", text: "Code reveal with bright (server only library)"},
 ]
 
@@ -26,6 +30,14 @@ const Footer = () => {
 		<h6 className="footer-title">With client side features</h6>
 		{
 		  clientSideFeatures.map(({href, text}) => (
+			<a key={href} href={href} className="link link-hover">{text}</a>
+		  ))
+		}
+	  </nav>
+	  <nav>
+		<h6 className="footer-title">Server only features</h6>
+		{
+		  serverOnlyFeatures.map(({href, text}) => (
 			<a key={href} href={href} className="link link-hover">{text}</a>
 		  ))
 		}
