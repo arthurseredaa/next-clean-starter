@@ -11,7 +11,7 @@ const CodeRevealPage = () => {
 	  <h2 className="text-2xl">Variables and Basic Data Types</h2>
 	  <p>
 		Python is a high-level, interpreted
-		programming language. In Python, you don't
+		programming language. In Python, you don&apos;t
 		need to specify the data type of a
 		variable when you declare it. Python
 		automatically determines the data type
