@@ -1,6 +1,6 @@
 import {readFile, writeFile} from "@/utils/file-helpers";
 
-const DB_PATH = './src/database.json'
+const DB_PATH = '/src/database.json'
 
 export const dynamic = 'force-dynamic';
 

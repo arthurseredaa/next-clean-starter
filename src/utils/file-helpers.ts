@@ -1,15 +1,17 @@
-import { promises as fs } from 'fs';
+import fs from 'fs';
 import path from 'path';
 
 export const readFile = (localPath: string): Promise<{hits: number}> => {
-  return fs.readFile(
+  const page = fs.readFileSync(
 	path.join(process.cwd(), localPath),
 	'utf8'
-  ).then((data) => JSON.parse(data))
+  )
+
+  return JSON.parse(page);
 }
 
-export const writeFile = async (localPath: string, content: string): Promise<void> => {
-  await fs.writeFile(
+export const writeFile = (localPath: string, content: string): void => {
+  fs.writeFileSync(
 	path.join(process.cwd(), localPath),
 	content,
 	{encoding: 'utf8'}

@@ -1,7 +1,7 @@
 import {readFile, writeFile} from "@/utils/file-helpers";
 import PageVisitedTimes from "./PageVisitedTimes";
 
-const DB_PATH = './src/database.json'
+const DB_PATH = '/src/database.json'
 
 // We need to read the data from the file, increment the hits and write it back to the file
 // Also, we need to pass the hits to the PageVisitedTimes component that is client-side rendered and use useState to blur the text
