@@ -2,6 +2,8 @@ import {readFile, writeFile} from "@/utils/file-helpers";
 
 const DB_PATH = './src/database.json'
 
+export const dynamic = 'force-dynamic';
+
 const HitCounterPage = () => {
   const data = JSON.parse(readFile(DB_PATH))
 
