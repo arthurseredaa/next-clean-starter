@@ -1,5 +1,5 @@
-import '../global.css';
-import Footer from "../components/Footer";
+import '@/global.css';
+import Footer from "@/components/Footer";
 
 const RootLayout = ({ children }) => {
   return (

@@ -1,4 +1,4 @@
-import {readFile, writeFile} from "../../../utils/file-helpers";
+import {readFile, writeFile} from "@/utils/file-helpers";
 import PageVisitedTimes from "./PageVisitedTimes";
 
 const DB_PATH = './src/database.json'
