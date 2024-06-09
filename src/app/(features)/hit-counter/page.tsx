@@ -4,8 +4,8 @@ const DB_PATH = './src/database.json'
 
 export const dynamic = 'force-dynamic';
 
-const HitCounterPage = () => {
-  const data = JSON.parse(readFile(DB_PATH))
+const HitCounterPage = async () => {
+  const data = await readFile(DB_PATH)
 
   data.hits += 1
 

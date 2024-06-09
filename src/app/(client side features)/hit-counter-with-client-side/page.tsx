@@ -6,8 +6,8 @@ const DB_PATH = './src/database.json'
 // We need to read the data from the file, increment the hits and write it back to the file
 // Also, we need to pass the hits to the PageVisitedTimes component that is client-side rendered and use useState to blur the text
 
-const HitCounterClientPage = () => {
-  const data = JSON.parse(readFile(DB_PATH))
+const HitCounterClientPage = async () => {
+  const data = await readFile(DB_PATH)
 
   data.hits += 1
 
